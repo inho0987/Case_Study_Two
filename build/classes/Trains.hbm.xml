@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018. 8. 23 ???? 4:00:53 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="Locomotive.Trains" table="TRAINS">
+        <id name="train_no" type="int">
+            <column name="TRAIN_NO" />
+            <generator class="assigned" />
+        </id>
+        <property name="ticket_price" type="int">
+            <column name="TICKET_PRICE" />
+        </property>
+        <property name="train_name" type="java.lang.String">
+            <column name="TRAIN_NAME" />
+        </property>
+        <property name="source" type="java.lang.String">
+            <column name="SOURCE" />
+        </property>
+        <property name="destination" type="java.lang.String">
+            <column name="DESTINATION" />
+        </property>
+    </class>
+</hibernate-mapping>
